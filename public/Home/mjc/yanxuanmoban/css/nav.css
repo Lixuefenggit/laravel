@@ -1,0 +1,248 @@
+*{
+	box-sizing: border-box;
+}
+
+body, button, code, input, select, textarea {
+    font-family: "Microsoft Yahei","微软雅黑",verdana;
+    color: #333;
+}
+
+.content{
+	z-index: 1;
+	position: relative;
+	/*border:1px solid blue;*/
+}
+
+.row{
+	width: 1090px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	/*border:1px solid red;*/
+}
+.nav_div{
+	border:1px solid #d9cfbc;
+	width:698px; 
+	height:61px;
+	margin:40px auto 40px;
+	border-right:none;
+}
+.nav_name{
+	float: left;
+	width: 104px;
+	height: 58px;
+	border-right: 1px solid #d9cfbc;
+	color: #b39f7a;
+	cursor: pointer;
+	margin:auto;
+	font-size:14px;
+	line-height:58px;
+	text-align:center;
+}
+.nav_content{
+	position: relative;
+	overflow: visible;
+	width: 1090px;
+	min-height: 580px;
+	/*border: 1px solid green;*/
+	padding-left: 0px;
+	float:        left;
+}
+.nav_left{
+	width: 680px;
+	float: left;
+	/*border: 1px solid red;*/
+	min-height:500px;
+}
+.nav_left_b{
+	margin-bottom: 60px;
+	/*border: 1px solid blue;*/
+	float:        left;
+}
+.nav_left_c_img{
+	border: none;
+	position: relative;
+	width: 100%;
+	height: 500px;
+	/*border: 1px solid red;*/	
+	float:        left;
+}
+.nav_left_c_img_title{
+	height: 79px;
+	padding: 13px 0 6px;
+	/*border: 1px solid pink;*/	
+	float:        left;
+}
+.nav_left_c_img_title_titleimg{
+	float: left;
+	width: 80px;
+	/*border: 1px solid blue;*/	
+}
+.nav_imga{
+	display: block;
+	width: 60px;
+	height: 60px;
+	/*border: 1px solid green;	*/
+	margin-right: 20px;
+	border-radius: 60px;
+	float:        left;
+}
+.nav_titlea{
+	margin: 5px 0 8px;
+	text-align: left;
+	/*border: 1px solid red;*/
+	float: left;
+}
+.name{
+	line-height: 26px;
+	height: 26px;
+	font-size: 16px;
+	font-weight: 400;
+	color: #333;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	clear:both;
+	/*border: 1px solid yellow;*/
+}
+.issuetime{
+	line-height: 23px;
+	height: 23px;
+	font-size: 14px;
+	color: #999;
+	/*border: 1px solid blue;*/
+}
+.nav_imgb{
+	position: relative;
+	margin: 0 0 0 0;
+	width: 560px;
+	min-height: 200px;
+	float:left;	
+}
+.nav_imgb_href{
+	display: block;
+	padding: 20px 20px 15px;
+	color: #333;
+}
+.nav_imgb_href_img{
+	display: block;
+	position: relative;
+	width: 560px;
+	height: 320px;
+	background-color: rgba(0, 0, 0, 0);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-origin: padding-box;
+	background-position-x: center;
+	background-position-y: center;
+	background-size: auto auto;
+}
+.nav_imgb_href_imgtitle{
+	display: block;
+	margin-top: 9px;
+	font-size: 18px;
+	color: #333;
+	height: 28px;
+	font-weight: 700;
+	clear:both;
+}
+.nav_imgb_href_imgcontent{
+	font-size: 14px;
+	line-height: 24px;
+	height: 24px;
+	color: #666;
+}
+.hotbox{
+	position: absolute;
+	left: 820px;
+	top: 0;
+}
+.hotbox_content{
+	width: 270px;
+    background-color: #fff;
+    color: #333;
+    overflow: hidden;
+    /*关联的课去掉*/
+    max-height: 1000px;
+	position: absolute;
+	top: 0px;	
+}
+.hotbox_content_h2title{
+	line-height: 42px;
+	height: 42px;
+	font-size: 18px;
+	font-weight: 700;
+	border-bottom: 1px solid #eaeaea;
+}
+.hotbox_content_ulcontent{
+	list-style: none;
+}
+.hotbox_content_ulcontent_aonecontent{
+	padding-top: 20px;
+    height: 78px;
+    display: block;
+	width: 270px;
+}
+.hotbox_content_ulcontent_aonecontent_img{
+	float: left;
+	width: 100px;
+	height: 58px;
+}
+.hotbox_content_ulcontent_aonecontent_contentbox{
+	margin-left: 120px;
+	width: 150px;
+	height: 58px;
+	padding: 8px 0;
+	overflow: hidden;	
+}
+.hotbox_content_ulcontent_aonecontent_contentbox_title{
+	height: 22px;
+	font-size: 14px;
+	line-height: 22px;
+}
+.hotbox_content_ulcontent_aonecontent_contentbox_content{
+	height: 21px;
+	font-size: 13px;
+	line-height: 21px;
+	color: #999;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*备用的伪类效果
+	//1.自己写的备用
+	<div style="border:1px solid #d9cfbc; width:698px; height:60px; margin:40px auto 40px"> 
+			    @foreach($list as $v)
+			            <div style="float:left; width:70px; height:60px; margin:auto"><img src='{{ trim($v->img,".") }}' width='70' height='58'></div>  
+                        <span style="color:#fff;background-color:#c2b295;float:left;width:104px; height:58px; margin:auto;border-right:none;font-size:14px;line-height:58px;text-align:center;">{{ $v->navname }}</span>
+                @endforeach	
+     </div>
+	//2.系统的效果JS里面有选择
+	<div class="g-row" id="topicContainer">
+
+	</div>
+*/

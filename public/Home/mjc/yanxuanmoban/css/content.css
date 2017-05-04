@@ -1,0 +1,68 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+/*外观内容整体盒子*/
+.content{
+
+}
+/*外观内容整体盒子下的标题盒子*/
+.content_titlebox{
+position: relative;
+width: 100%;
+
+}
+/*外观内容整体盒子下的标题盒子下的标题布局*/
+.content_titlebox_title{
+padding-top: 80px;
+width: 1090px;
+margin: 0 auto;
+
+}
+.content_titlebox_title_ptitle{
+font-size: 30px;
+color: #333;
+line-height: 32px;
+text-align: left;
+
+}
+.content_titlebox_title_namebox{
+margin-top: 50px;	
+}
+.content_titlebox_title_namebox_nameboxb{
+float: left;	
+}
+.content_titlebox_title_namebox_nameboxb_name{
+font-size: 14px;
+color: #333;
+line-height: 16px;
+}
+.content_titlebox_title_namebox_nameboxb_time{
+font-size: 13px;
+color: #999;
+line-height: 14px;
+margin-top: 10px;	
+}
+/*外观内容盒子下的文章内容盒子*/
+.content_contentbox{
+position: relative;
+width: 100%;
+}
+.content_contentbox_content{
+width: 1090px;
+margin: 100px auto 0;
+background: #f7f5f1;
+padding: 90px 80px 50px;
+position: relative;
+border-radius: 2px;
+
+}
+.content_contentbox_content_wenzhang{
+font-size: 18px;
+line-height: 36px;
+color: #333;
+text-align: left;
+position: relative;
+
+}

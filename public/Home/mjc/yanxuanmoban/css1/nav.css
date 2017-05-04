@@ -1,0 +1,120 @@
+*{
+box-sizing: border-box;
+}
+
+body, button, code, input, select, textarea {
+    font-family: "Microsoft Yahei","微软雅黑",verdana;
+    color: #333;
+}
+
+.content{
+z-index: 1;
+position: relative;
+border:1px solid blue;
+}
+
+.row{
+width: 1090px;
+margin-right: auto;
+margin-left: auto;
+position: relative;
+border:1px solid red;
+
+}
+.nav_div{
+border:1px solid #d9cfbc;
+width:698px; 
+height:60px;
+margin:40px auto 40px;
+border-right:none;
+}
+.nav_name{
+float: left;
+width: 104px;
+height: 58px;
+border-right: 1px solid #d9cfbc;
+color: #b39f7a;
+cursor: pointer;
+margin:auto;
+font-size:14px;
+line-height:58px;
+text-align:center;
+}
+.nav_content{
+position: relative;
+overflow: visible;
+width: 1090px;
+height: 580px;
+border: 1px solid green;
+padding-left: 0px;
+}
+.nav_left{
+width: 680px;
+float: left;
+border: 1px solid red;
+height:500px;
+}
+.nav_left_b{
+margin-bottom: 60px;
+border: 1px solid blue;
+}
+.nav_left_c_img{
+	border: none;
+	position: relative;
+	width: 100%;
+border: 1px solid red;	
+}
+.nav_left_c_img_title{
+	height: 79px;
+	padding: 13px 0 6px;
+	border: 1px solid pink;	
+}
+.nav_left_c_img_title_titleimg{
+	float: left;
+	width: 80px;
+	border: 1px solid blue;	
+}
+.nav_imga{
+display: block;
+width: 60px;
+height: 60px;
+	border: 1px solid green;	
+margin-right: 20px;
+border-radius: 60px;
+}
+.nav_titlea{
+margin: 5px 0 8px;
+text-align: left;
+border: 1px solid red;
+float: left;
+}
+.name{
+line-height: 26px;
+height: 26px;
+font-size: 16px;
+font-weight: 400;
+color: #333;
+margin: 0;
+padding: 0;
+text-align: left;
+}
+.issuetime{
+line-height: 23px;
+height: 23px;
+font-size: 14px;
+color: #999;
+	
+}
+/*备用的伪类效果
+	//1.自己写的备用
+	<div style="border:1px solid #d9cfbc; width:698px; height:60px; margin:40px auto 40px"> 
+			    @foreach($list as $v)
+			            <div style="float:left; width:70px; height:60px; margin:auto"><img src='{{ trim($v->img,".") }}' width='70' height='58'></div>  
+                        <span style="color:#fff;background-color:#c2b295;float:left;width:104px; height:58px; margin:auto;border-right:none;font-size:14px;line-height:58px;text-align:center;">{{ $v->navname }}</span>
+                @endforeach	
+     </div>
+	//2.系统的效果JS里面有选择
+	<div class="g-row" id="topicContainer">
+
+	</div>
+*/
